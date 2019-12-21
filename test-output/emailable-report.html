@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">Exposure.RestAssured.addReminderTests<td><a href="#m1"><b>initialiseDB</b>  </a></td><td class="numi">1</td><td>1576934651937</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Exposure.RestAssured.addReminderTests<td><a href="#m2"><b>addReminderInsertion_BEP14470001</b>  </a></td><td class="numi">1</td><td>1576934673554</td><td class="numi">16</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">Exposure.RestAssured.addReminderTests<td><a href="#m3"><b>closeConnection</b>  </a></td><td class="numi">1</td><td>1576934674214</td><td class="numi">0</td></tr>
+</table>
+<h1>Test</h1>
+<a id="m1"></a><h2>Exposure.RestAssured.addReminderTests:initialiseDB</h2>
+<div style="padding-left:3em">
+<p>IO Error: The Network Adapter could not establish the connection</p>
+oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:419)
+<br/>at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:536)
+<br/>at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:228)
+<br/>at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+<br/>at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+<br/>at java.sql.DriverManager.getConnection(Unknown Source)
+<br/>at java.sql.DriverManager.getConnection(Unknown Source)
+<br/>at dbConnection.DataBaseConnection.ComicConnection(DataBaseConnection.java:36)
+<br/>at dbConnection.DataBaseConnection.&lt;init&gt;(DataBaseConnection.java:29)
+<br/>at base.Testbase.initialiseDB(Testbase.java:33)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+<br/>at org.testng.TestNG.run(TestNG.java:1025)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+<p>Caused by The Network Adapter could not establish the connection</p>
+oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:375)
+<br/>at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:422)
+<br/>at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:678)
+<br/>at oracle.net.ns.NSProtocol.connect(NSProtocol.java:238)
+<br/>at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+<br/>at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+<br/>at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:536)
+<br/>at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:228)
+<br/>at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+<br/>at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+<br/>at java.sql.DriverManager.getConnection(Unknown Source)
+<br/>at java.sql.DriverManager.getConnection(Unknown Source)
+<br/>at dbConnection.DataBaseConnection.ComicConnection(DataBaseConnection.java:36)
+<br/>at dbConnection.DataBaseConnection.&lt;init&gt;(DataBaseConnection.java:29)
+<br/>at base.Testbase.initialiseDB(Testbase.java:33)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+<br/>at org.testng.TestNG.run(TestNG.java:1025)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+<p>Caused by Connection timed out: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.PlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.SocksSocketImpl.connect(Unknown Source)
+<br/>at java.net.Socket.connect(Unknown Source)
+<br/>at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:209)
+<br/>at oracle.net.nt.ConnOption.connect(ConnOption.java:123)
+<br/>at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:353)
+<br/>at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:422)
+<br/>at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:678)
+<br/>at oracle.net.ns.NSProtocol.connect(NSProtocol.java:238)
+<br/>at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1054)
+<br/>at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:308)
+<br/>at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:536)
+<br/>at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:228)
+<br/>at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+<br/>at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:521)
+<br/>at java.sql.DriverManager.getConnection(Unknown Source)
+<br/>at java.sql.DriverManager.getConnection(Unknown Source)
+<br/>at dbConnection.DataBaseConnection.ComicConnection(DataBaseConnection.java:36)
+<br/>at dbConnection.DataBaseConnection.&lt;init&gt;(DataBaseConnection.java:29)
+<br/>at base.Testbase.initialiseDB(Testbase.java:33)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:551)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+<br/>at org.testng.TestNG.run(TestNG.java:1025)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>Exposure.RestAssured.addReminderTests:addReminderInsertion_BEP14470001</h2>
+<div style="padding-left:3em">
+<p>null</p>
+java.util.regex.Matcher.getTextLength(Unknown Source)
+<br/>at java.util.regex.Matcher.reset(Unknown Source)
+<br/>at java.util.regex.Matcher.&lt;init&gt;(Unknown Source)
+<br/>at java.util.regex.Pattern.matcher(Unknown Source)
+<br/>at com.aventstack.extentreports.utils.ExceptionUtil.getExceptionHeadline(ExceptionUtil.java:25)
+<br/>at com.aventstack.extentreports.ExtentTest.log(ExtentTest.java:399)
+<br/>at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:943)
+<br/>at com.aventstack.extentreports.ExtentTest.skip(ExtentTest.java:955)
+<br/>at listeners.TestListener.onTestSkipped(TestListener.java:52)
+<br/>at org.testng.internal.Invoker.runTestListeners(Invoker.java:1875)
+<br/>at org.testng.internal.Invoker.runTestListeners(Invoker.java:1867)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:775)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:768)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+<br/>at org.testng.TestNG.run(TestNG.java:1025)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>Exposure.RestAssured.addReminderTests:closeConnection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
